@@ -1,0 +1,6 @@
+oai/
+oai.tar.gz
+*.swp
+*.swo
+./vagrant
+Vagrantfile
