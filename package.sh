@@ -4,7 +4,6 @@ set -eu
 # Retrieve a list of all dependancies a package relies on.
 depslist () {
     apt-cache depends --recurse --no-recommends --no-suggests --no-conflicts --no-breaks --no-replaces --no-enhances --no-pre-depends $@ | grep "^\w"
-    #apt-cache depends --recurse --no-recommends --no-suggests --no-conflicts --no-breaks --no-replaces --no-enhances $@ | grep "^\w"
 }
 
 # Download all debian files associated with a package.
